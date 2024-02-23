@@ -17,15 +17,12 @@ main{
     padding: 40px;
 }
 .entrada__caixa__texto{
-    width: 680px;
-    height: 200px;
+
 }
 
 .crip__texto{
-
-}
-input{
-    font-weight: 400px; 
+    width: 680px;
+    height: 200px;
 }
 .botoes{
     display: flex;
