@@ -8,21 +8,21 @@
 </head>
 <body>
     <header>
-        uma imagem do a
+        A
     </header>
 
     <main>
         <section class="entrada">
             <input type="text" class="crip__texto" placeholder="Texto que será substituído quando comecar"> 
-            Img Apenas letras minúscula e sem acentos.
+                <p>Img Apenas letras minúscula e sem acentos.</p>
             <div class="botoes">
                 <button onclick="criptografarButton()" class="crip__button">Criptografar</button>
-                <button onclick="descriptografarButton()" class="des__button">Descriptografar</button>
+                <button onclick="descriptografarButton()" class="des__button" disabled>Descriptografar</button>
             </div>
         </section>
            
         <section class="saida">
-            <div class="saida__caixa__texto">
+            <div id="saida__caixa__texto">
                 <h2>
                     Nenhuma mensagem encontrada
                 </h2>

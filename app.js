@@ -4,17 +4,18 @@
 
 let textoInicial;
 
-function criptografarButton(){
-    textoInicial = document.querySelector('input').value;
-
-}
-
 function exibiTextoNaTela(tag, texto){
     let campo = document.querySelector(tag);
     campo.innerHTML = texto;
 }
-
-function exibirMensagemInicial(){
-    exibiTextoNaTela('h2','Nenhuma mensagem encontrada');
-    exibiTextoNaTela('p',`${texto_criptografado}`);
+function limparCxEntrada(){
+    let textoInicial = document.querySelector('input');
+    textoInicial.value = '';
+}
+function criptografarButton(){
+    textoInicial = document.querySelector('input').value;
+    limparCxEntrada();
+    
+    return exibiTextoNaTela('#saida__caixa__texto',`${textoInicial}`);
+    
 }

@@ -6,20 +6,23 @@
 header{
     padding-left: 40px;
     padding-top: 40px;
+    background-color: #F3F5FC;
+
 }
 main{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .entrada{
+    background-color: #F3F5FC;
+
     flex-direction: column;
     margin: 40px 40px 40px 40px;
     padding: 40px;
 }
-.entrada__caixa__texto{
-
+p{
+    margin: 0;
 }
-
 .crip__texto{
     width: 680px;
     height: 200px;
@@ -42,6 +45,10 @@ main{
     border-radius: 24px;
 }
 
+.crip__button:hover, .des__button:hover{
+    background-color: black;
+}
+
 .des__button{
     background-color: #D8DFE8;
     color: #0a3871;
@@ -53,11 +60,17 @@ main{
     border: 1px #0a3871;
 }
 
-.saida{
-    background-color: white;
+saida {
+    width: 680px;
+    height: 200px;
+    margin: 40px 40px 40px 40px;
+    padding: 40px;
+    background-color: black;
+
 }
 
 .saida__caixa__texto{
+
     text-align: center;
     margin-top: 220px;
 }
