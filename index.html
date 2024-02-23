@@ -10,19 +10,32 @@
     <header>
         uma imagem do a
     </header>
+
     <main>
-        <section class="area_cripto">
-            <div class="caixa_de_texto">
-                <input type="text" name="crip__texto" placeholder="Digite seu texto"> 
+        <section class="entrada">
+            <div class="entrada__caixa__texto">
+                <input type="text" id="crip__texto" placeholder="Digite seu texto"> 
+            </div>
+            Img Apenas letras minúscula e sem acentos.
+            <div class="botoes">
+                <button onclick="criptografarButton()" class="crip__button">Criptografar</button>
+                <button onclick="descriptografarButton()" class="des__button">Descriptografar</button>
             </div>
         </section>
-            Img Apenas letras minúscula e sem acentos.
-        <div class="botoes">
-            <button onclick="criptografarButton()" class="crip__button">Criptografar</button>
-            <button onclick="descriptografarButton()" class="des__button">Descriptografar</button>
-        </div>
-        
+           
+        <section class="saida">
+            <div class="saida__caixa__texto">
+                <h2>
+                    Nenhuma mensagem encontrada
+                </h2>
+                <p>
+                    Digite um texto que você deseja criptografar ou descriptografar.
+                </p>
+            </div>
+            
+        </section>
     </main>
+
     <footer>
 
     </footer>

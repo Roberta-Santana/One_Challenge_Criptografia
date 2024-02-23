@@ -1,23 +1,28 @@
 *{
     padding: 0;
-    display: flexbox;
+    background-color: #F3F5FC;
+
 }
 header{
     padding-left: 40px;
     padding-top: 40px;
 }
-
-.area_cripto{
+main{
     display: flex;
-
+    justify-content: space-between;
+}
+.entrada{
+    flex-direction: column;
+    margin: 40px 40px 40px 40px;
+    padding: 40px;
+}
+.entrada__caixa__texto{
+    width: 680px;
+    height: 200px;
 }
 
 .crip__texto{
-    font-size: 50px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-.caixa_de_texto{
-    
+
 }
 input{
     font-weight: 400px; 
@@ -25,8 +30,7 @@ input{
 .botoes{
     display: flex;
     justify-content: space-around;
-    /*margin-top: 885px;
-    margin-left: 240px;*/
+    margin-top: 10px;
     gap: 24px;
     width: 680px;
     height: 67px;
@@ -50,4 +54,13 @@ input{
     gap:8px;
     border-radius: 24px;
     border: 1px #0a3871;
+}
+
+.saida{
+    background-color: white;
+}
+
+.saida__caixa__texto{
+    text-align: center;
+    margin-top: 220px;
 }
