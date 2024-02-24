@@ -2,6 +2,7 @@
     padding: 0;
     background-color: #F3F5FC;
 
+
 }
 header{
     padding-left: 40px;
@@ -15,11 +16,11 @@ main{
 }
 .entrada{
     background-color: #F3F5FC;
-
     flex-direction: column;
     margin: 40px 40px 40px 40px;
     padding: 40px;
 }
+
 p{
     margin: 0;
 }
@@ -60,17 +61,10 @@ p{
     border: 1px #0a3871;
 }
 
-saida {
+#saida__caixa__texto{
     width: 680px;
     height: 200px;
     margin: 40px 40px 40px 40px;
-    padding: 40px;
-    background-color: black;
-
-}
-
-.saida__caixa__texto{
-
+    background-color: yellow;
     text-align: center;
-    margin-top: 220px;
 }

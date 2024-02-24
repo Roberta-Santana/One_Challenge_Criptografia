@@ -8,12 +8,16 @@ function exibiTextoNaTela(tag, texto){
     let campo = document.querySelector(tag);
     campo.innerHTML = texto;
 }
+exibiTextoNaTela("h2",'Nenhuma mensagem encontrada');
+exibiTextoNaTela("h6",'Digite um texto que você deseja criptografar ou descriptografar.');
+
 function limparCxEntrada(){
     let textoInicial = document.querySelector('input');
     textoInicial.value = '';
 }
 function criptografarButton(){
     textoInicial = document.querySelector('input').value;
+
     limparCxEntrada();
     
     return exibiTextoNaTela('#saida__caixa__texto',`${textoInicial}`);
