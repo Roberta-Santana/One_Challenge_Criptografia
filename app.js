@@ -15,7 +15,7 @@ function limparCxEntrada(){
 }
 function criptografarButton(){
     textoInicial = document.querySelector('input').value;
-        if(textoInicial.includes(a)){
+        if(textoInicial.includes('a')){
             textoInicial.replace('a', 'ai')}
     
     limparCxEntrada();
