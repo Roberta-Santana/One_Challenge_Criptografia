@@ -2,46 +2,57 @@
 2- converter os elementos do texto (lista ?? de string?)
 3-carregar texto convertido na caixa de texto descrip*/
 
+
 var textoInicial = [];
-var texto = '';
-var i = 0;
-var textoAlterado = 0;
+
 
 function exibiTextoNaTela(tag, texto){
     let campo = document.querySelector(tag);
     campo.innerHTML = texto;
 }
 
-function limparCxEntrada(){
-    let limparCampo = document.querySelector('input');
+function limparTexto(tag){
+    let limparCampo = document.querySelector(tag);
     limparCampo.value = '';
 }
 
-function substituirTexto(letraA, letraB){
+/* function substituirTexto(letraA, letraB){
     if(textoInicial.includes(letraA)){
         textoInicial=textoInicial.replace(letraA,letraB);
     }
     return textoInicial;
-}
+} */
 
 function criptografarButton(){
-    textoInicial = document.querySelector('input').value;   
-        substituirTexto('e', 'enter');
-        console.log(textoInicial);
-        substituirTexto('i', 'imes');
-        console.log(textoInicial);
-        substituirTexto('o', 'ober');
-        console.log(textoInicial);
-        substituirTexto('u', 'ufat');
-        console.log(textoInicial); 
-        substituirTexto('a','ai');
-        console.log(textoInicial);
 
-    limparCxEntrada();
-    return exibiTextoNaTela('#saida__caixa__texto',`${textoInicial}`);    
+    var textoInicial = document.querySelector('input').value;
+    var textoAlterado = '';
+    for(var i=0; i<textoInicial.length;i++){
+        
+        if(textoInicial[i]==='e'){
+            textoAlterado+='enter';
+        }        
+        console.log(textoInicial);
+        console.log(textoAlterado);
+
+        if(textoInicial[i]==='a'){
+            textoAlterado+='ai';
+        }
+        else{
+            textoAlterado+=textoInicial[i]}
+    }
+    limparTexto('input');
+    return exibiTextoNaTela('#saida__caixa__texto',`${textoAlterado}`);    
 }
 
-function descriptografarButton(){
+/* substituirTexto('i', 'imes');
+console.log(textoInicial);
+substituirTexto('o', 'ober');
+console.log(textoInicial);
+substituirTexto('u', 'ufat');
+console.log(textoInicial);  */
+
+/* function descriptografarButton(){
     textoInicial = document.querySelector('input').value;   
     substituirTexto('enter', 'e');
     console.log(textoInicial);
@@ -54,4 +65,4 @@ function descriptografarButton(){
     substituirTexto('ufat','u');
     console.log(textoInicial); 
     return exibiTextoNaTela('#saida__caixa__texto',`${textoInicial}`); 
-}
+} */
