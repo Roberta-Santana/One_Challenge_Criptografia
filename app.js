@@ -2,25 +2,42 @@
 2- converter os elementos do texto (lista ?? de string?)
 3-carregar texto convertido na caixa de texto descrip*/
 
-let textoInicial;
-let novoTexto;
+var textoInicial = [];
+var texto = '';
+var i = 0;
+var textoAlterado = 0;
 
 function exibiTextoNaTela(tag, texto){
     let campo = document.querySelector(tag);
     campo.innerHTML = texto;
 }
 
-function substituirTexto(letraA, letraB){
-    if(textoInicial.includes(letraA)){
-        textoInicial=textoInicial.replace(letraA,letraB)
-    }
-    return textoInicial;
+function limparCxEntrada(){
+    let limparCampo = document.querySelector('input');
+    limparCampo.value = '';
 }
 
-function limparCxEntrada(){
-    let textoInicial = document.querySelector('input');
-    textoInicial.value = '';
+function substituirTexto(texto, letraA, letraB){
+    if(texto.includes(letraA)){
+        texto=texto.replace(new RegExp(letraA,'g'),letraB);
+    }
+    return texto;
 }
+
+function criptografarButton(){
+    textoInicial = document.querySelector('input').value;
+    for(i=0;i<textoInicial.lenght;i++){
+        textoInicial = substituirTexto(textoInicial,'e','enter');
+        console.log(textoInicial);
+        textoInicial+= substituirTexto(textoInicial,'a','ai');
+        console.log(textoInicial);
+    }
+
+    /*limparCxEntrada();*/
+    return exibiTextoNaTela('#saida__caixa__texto',`${textoInicial}`);    
+}
+
+/*
 function criptografarButton(){
     textoInicial = document.querySelector('input').value;
         substituirTexto('e', 'enter');
@@ -33,7 +50,6 @@ function criptografarButton(){
         console.log(textoInicial); 
         substituirTexto('a','ai');
         console.log(textoInicial);
-
     limparCxEntrada();
     return exibiTextoNaTela('#saida__caixa__texto',`${textoInicial}`);    
 }
@@ -51,4 +67,4 @@ function descriptografarButton(){
     substituirTexto('ufat','u');
     console.log(textoInicial); 
     return exibiTextoNaTela('#saida__caixa__texto',`${textoInicial}`); 
-}
+}*/
