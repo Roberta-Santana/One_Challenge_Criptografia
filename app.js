@@ -17,29 +17,15 @@ function limparCxEntrada(){
     limparCampo.value = '';
 }
 
-function substituirTexto(texto, letraA, letraB){
-    if(texto.includes(letraA)){
-        texto=texto.replace(new RegExp(letraA,'g'),letraB);
+function substituirTexto(letraA, letraB){
+    if(textoInicial.includes(letraA)){
+        textoInicial=textoInicial.replace(letraA,letraB);
     }
-    return texto;
+    return textoInicial;
 }
 
 function criptografarButton(){
-    textoInicial = document.querySelector('input').value;
-    for(i=0;i<textoInicial.lenght;i++){
-        textoInicial = substituirTexto(textoInicial,'e','enter');
-        console.log(textoInicial);
-        textoInicial+= substituirTexto(textoInicial,'a','ai');
-        console.log(textoInicial);
-    }
-
-    /*limparCxEntrada();*/
-    return exibiTextoNaTela('#saida__caixa__texto',`${textoInicial}`);    
-}
-
-/*
-function criptografarButton(){
-    textoInicial = document.querySelector('input').value;
+    textoInicial = document.querySelector('input').value;   
         substituirTexto('e', 'enter');
         console.log(textoInicial);
         substituirTexto('i', 'imes');
@@ -50,6 +36,7 @@ function criptografarButton(){
         console.log(textoInicial); 
         substituirTexto('a','ai');
         console.log(textoInicial);
+
     limparCxEntrada();
     return exibiTextoNaTela('#saida__caixa__texto',`${textoInicial}`);    
 }
@@ -67,4 +54,4 @@ function descriptografarButton(){
     substituirTexto('ufat','u');
     console.log(textoInicial); 
     return exibiTextoNaTela('#saida__caixa__texto',`${textoInicial}`); 
-}*/
+}
