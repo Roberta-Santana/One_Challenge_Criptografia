@@ -27,7 +27,7 @@ main{
 p{
     margin: 0;
 }
-.crip__texto{
+#crip__texto{
     width: 680px;
     height: 200px;
 }
