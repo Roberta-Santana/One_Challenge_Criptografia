@@ -16,13 +16,13 @@ function criptografarButton(){
     textoSaida= textoInicial.replace(/e/g, "enter").replace(/i/g, "imes").replace(/a/g, "ai")
                             .replace(/o/g, "ober").replace(/u/g, "ufat");
     limparTexto('input');
-    return exibiTextoNaTela('#saida__caixa__texto',`${textoSaida}`);
+    return exibiTextoNaTela('.saida__caixa',`${textoSaida}`);
 }
 
 function descriptografarButton(){
-    var textoFinal = document.querySelectorAll('#saida__caixa__texto');
-    var textoDescrip= textoFinal.replace(/enter/g, "e").replace(/imes/g, "i").replace(/ai/g, "a")
-                            .replace(/ober/g, "o").replace(/ufat/g, "u");
-
-    return exibiTextoNaTela('#crip__texto',`${textoDescrip}`);
+   var textoFinal = textoSaida;
+   var textoDescrip = textoFinal.replace(/enter/g, "e").replace(/imes/g, "i").replace(/ai/g, "a")
+                                .replace(/ober/g, "o").replace(/ufat/g, "u");
+/* LIMPAR TEXTO CRIPTOGRAFADO */
+    return document.querySelector('input[type="text"]').value = textoDescrip; 
 }
