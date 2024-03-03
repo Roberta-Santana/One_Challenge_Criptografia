@@ -27,7 +27,7 @@ main{
 p{
     margin: 0;
 }
-#crip__texto{
+.crip__texto{
     width: 680px;
     height: 200px;
 }
@@ -63,7 +63,7 @@ p{
     border: 1px #0a3871;
 }
 
-#saida__caixa__texto{
+.saida__caixa{
     width: 680px;
     height: 200px;
     margin: 40px 40px 40px 40px;
