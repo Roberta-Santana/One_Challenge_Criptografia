@@ -8,6 +8,8 @@ body{
     box-sizing: border-box;
 }
 header{
+    width: 120px;/*LARGURA*/
+    height: 48px;
     padding-left: 40px;
     padding-top: 40px;
 
@@ -19,7 +21,8 @@ main{
 }
 
 .entrada{
-
+    width: 680px;
+    height: 48px;
     margin: 40px 40px 40px 40px;
     padding: 40px;
 }
@@ -28,9 +31,14 @@ p{
     margin: 0;
 }
 .crip__texto{
+    color: gray;
+
+    background-color: #F3F5FC;
+    border: none;
     width: 680px;
     height: 200px;
 }
+
 .entrada__botoes{
     display: flex;
     justify-content: space-around;
@@ -64,9 +72,21 @@ p{
 }
 
 .saida__caixa{
-    width: 680px;
-    height: 200px;
+    width: 400px;
+    height: 944px;
     margin: 40px 40px 40px 40px;
-    background-color: yellow;
     text-align: center;
+    background-color: white;
+    border-radius: 32px;
+}
+
+.saida__caixa__imagem{
+    width: 366px;
+    height: 304px;
+    padding-top: 243px;
+}
+
+.saida__caixa__texto{
+    width: 368px;
+    height: 106px;
 }

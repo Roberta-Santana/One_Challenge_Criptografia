@@ -8,13 +8,15 @@
 </head>
 <body>
     <header>
-        A
+        <img class="cabecalho" src="./Images/Frame 6.png">
     </header>
 
     <main>
         <section class="entrada">
-            <input type="text" class="crip__texto" placeholder="Texto que será substituído quando comecar"> 
-                <p>Img Apenas letras minúscula e sem acentos.</p>
+            <input type="text" class="crip__texto" placeholder="Digite seu texto aqui">
+            <p class="entrada__texto">Digite seu texto aqui</p>
+            <p> <img class="entrada__legenda__imag" src="./Images/Group.png">
+                Apenas letras minúscula e sem acentos.</p>
             <div class="entrada__botoes">
                 <button onclick="criptografarButton()" class="crip__button">Criptografar</button>
                 <button onclick="descriptografarButton()" class="des__button">Descriptografar</button>
@@ -22,10 +24,11 @@
         </section>
            
         <section class="saida__caixa">
-            <div id="saida__caixa__texto">
-                <h1>Nenhuma mensagem encontrada</h1>
-                <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
-            </div>
+                <img class="saida__caixa__imagem"  src="./Images/High quality products 1 1.png" alt="Nenhuma mensagem">
+                <div class="saida__caixa__texto">                
+                    <h1>Nenhuma mensagem encontrada</h1>
+                    <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+                </div>  
         </section>
     </main>
 
