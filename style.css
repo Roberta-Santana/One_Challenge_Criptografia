@@ -31,8 +31,10 @@ p{
     margin: 0;
 }
 .crip__texto{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 32px;
     color: gray;
-
+    size: 32px;
     background-color: #F3F5FC;
     border: none;
     width: 680px;
@@ -72,9 +74,11 @@ p{
 }
 
 .saida__caixa{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
     width: 400px;
     height: 944px;
-    margin: 40px 40px 40px 40px;
+
     text-align: center;
     background-color: white;
     border-radius: 32px;
@@ -87,6 +91,7 @@ p{
 }
 
 .saida__caixa__texto{
+    margin: 40px 40px 40px 40px;
     width: 368px;
     height: 106px;
 }
