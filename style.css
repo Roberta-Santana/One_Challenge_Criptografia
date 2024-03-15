@@ -10,27 +10,23 @@ body{
 header{
     width: 120px;/*LARGURA*/
     height: 48px;
-    padding-left: 40px;
-    padding-top: 40px;
-
+    padding-left: 20px;
+    padding-top: 20px;
 }
+
 main{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-direction: row;
 }
 
 .entrada{
     width: 680px;
     height: 48px;
-    margin: 40px 40px 40px 40px;
-    padding: 40px;
+    margin: 40px 0 40px 12%;
 }
 
-p{
-    margin: 0;
-}
-.crip__texto{
+.entrada__input{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-size: 32px;
     color: gray;
@@ -38,7 +34,9 @@ p{
     background-color: #F3F5FC;
     border: none;
     width: 680px;
-    height: 200px;
+}
+.entrada__legenda{
+    margin-top: 300px;
 }
 
 .entrada__botoes{
@@ -73,25 +71,26 @@ p{
     border: 1px #0a3871;
 }
 
-.saida__caixa{
+.saida{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 20px;
-    width: 400px;
-    height: 944px;
-
+    font-size: 15px;
     text-align: center;
     background-color: white;
     border-radius: 32px;
+    width: 400px;
+    height: 944px;
+    margin: 0px 40px 5px 40px;
 }
 
-.saida__caixa__imagem{
-    width: 366px;
-    height: 304px;
-    padding-top: 243px;
-}
-
-.saida__caixa__texto{
+.saida__caixa{
     margin: 40px 40px 40px 40px;
-    width: 368px;
-    height: 106px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    
 }
+
+.saida__imagem{
+    padding-top: 10px;
+}
+
