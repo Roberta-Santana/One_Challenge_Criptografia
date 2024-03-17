@@ -23,14 +23,13 @@ header{
 
 main{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-direction: row;
 }
 
 .entrada{
-    width: 680px;
-    height: 48px;
-    margin: 40px 0 40px 12%;
+ /* margin: Up   0 Donw left; */
+    margin: 2rem 12% 2rem 12%;
 }
 
 .entrada__input{
@@ -85,8 +84,7 @@ main{
     background-color: white;
     border-radius: 32px;
     width: 400px;
-    height: 944px;
-    margin: 0px 40px 5px 40px;
+    margin: 40px 40px 40px 40px;
 }
 
 .saida__caixa{
@@ -94,15 +92,17 @@ main{
     display: flex;
     flex-direction: column;
     align-content: center;
-    
 }
 
 .saida__imagem{
     padding-top: 10px;
 }
 
-@media (max-width:800px) {
-    
+@media (max-width:1092px) {
+    main{
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 @media (max-width:480px) {
