@@ -1,9 +1,16 @@
+
+
+:root{
+    --cor-fundo:  #F3F5FC;
+    --cor-azul:#0a3871;
+}
+
 *{
     padding: 0;
 }
 
 body{
-    background-color: #F3F5FC;
+    background-color: var(--cor-fundo);
     height: 50vh;
     box-sizing: border-box;
 }
@@ -31,7 +38,7 @@ main{
     font-size: 32px;
     color: gray;
     size: 32px;
-    background-color: #F3F5FC;
+    background-color:var(--cor-fundo);
     border: none;
     width: 680px;
 }
@@ -48,7 +55,7 @@ main{
     height: 67px;
 }
 .crip__button{
-    background-color: #0a3871;
+    background-color: var(--cor-azul);
     color: white;
     width: 328px;
     height: 67px;
@@ -62,13 +69,13 @@ main{
 
 .des__button{
     background-color: #D8DFE8;
-    color: #0a3871;
+    color: var(--cor-azul);
     width: 328px;
     height: 67px;
     padding: 24px;
     gap:8px;
     border-radius: 24px;
-    border: 1px #0a3871;
+    border: 1px var(--cor-azul);
 }
 
 .saida{
@@ -94,3 +101,10 @@ main{
     padding-top: 10px;
 }
 
+@media (max-width:800px) {
+    
+}
+
+@media (max-width:480px) {
+    
+}
