@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
 :root{
     --cor-fundo:  #F3F5FC;
@@ -7,6 +7,8 @@
 
 *{
     padding: 0;
+    margin: 0;
+    font-family: "Inter", sans-serif;
 }
 
 body{
@@ -17,41 +19,50 @@ body{
 header{
     width: 120px;/*LARGURA*/
     height: 48px;
-    padding-left: 20px;
-    padding-top: 20px;
+    margin-top: 40px;
+    margin-left: 40px;
 }
 
 main{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-direction: row;
 }
 
 .entrada{
  /* margin: Up   0 Donw left; */
-    margin: 2rem 12% 2rem 12%;
+    margin: 2rem 7% 2rem 12%;
 }
 
-.entrada__input{
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+.entrada__input{    
     font-size: 32px;
-    color: gray;
-    size: 32px;
+    color: var(--cor-azul);
     background-color:var(--cor-fundo);
     border: none;
     width: 680px;
+    height: 48px;
 }
 .entrada__legenda{
-    margin-top: 300px;
+    display: flex;
+    margin-top: 851px;
+    color: gray;
+    font-size: 12px;
+    align-content: center;
+    gap: 8px;
+}
+
+.entrada__legenda img{
+    width: 16px;
+    height: 16px;
 }
 
 .entrada__botoes{
     display: flex;
     justify-content: space-around;
+    width: 42.5rem;
     margin-top: 10px;
     gap: 24px;
-    width: 680px;
-    height: 67px;
+
 }
 .crip__button{
     background-color: var(--cor-azul);
@@ -78,33 +89,78 @@ main{
 }
 
 .saida{
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    width: 400px;
+    height: 944px;
     font-size: 15px;
     text-align: center;
     background-color: white;
     border-radius: 32px;
-    width: 400px;
     margin: 40px 40px 40px 40px;
 }
 
 .saida__caixa{
-    margin: 40px 40px 40px 40px;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
+    margin: 40px 0px 40px 40px;
 }
 
 .saida__imagem{
-    padding-top: 10px;
+    padding-top: 243px;
 }
 
-@media (max-width:1092px) {
+.saida__texto{
+    display: flex;
+    flex-direction: column;
+    margin-top: 32px;
+    gap:8px;
+
+}
+.saida__texto h1{
+    font-size: 24px;
+}
+
+.saida__texto p{
+    font-size: 16px;
+}
+
+@media (max-width:800px) {
     main{
+        display: flex;
         flex-direction: column;
         align-items: center;
+        margin: 2.5rem;
     }
+    .entrada{
+        margin: 0;
+    }
+
+    .des__button{
+        border: 1px solid var(--cor-azul);
+        background-color: var(--cor-fundo);
+    }
+
+    .saida{
+        display: flex;
+        margin: 0;
+        height: 8.3rem;
+    }
+    .saida__caixa{
+
+        margin: 1.25rem 0;
+    }
+    .saida__imagem{
+        display: none;
+    }
+
 }
 
 @media (max-width:480px) {
-    
+
+    .entrada__legenda{
+        padding-bottom: 7%;
+        justify-content: center;
+    }
+
+    .entrada__botoes{
+        flex-direction: column; 
+        align-items: center;
+    }
 }
