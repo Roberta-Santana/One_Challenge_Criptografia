@@ -143,7 +143,7 @@ main{
         word-wrap: break-word;
     }
     .entrada__botoes{
-        width: auto;
+        width: 100%;
         display: flex;
     }
     .des__button{
@@ -154,12 +154,13 @@ main{
     .saida{
         margin: 1.5rem;
         height: auto;
-        width: 100%;
+        width: auto;
         justify-content: center;
         text-align: justify;
     }
 
     .saida__caixa{
+        width: 80%;
         margin: auto;
         padding: 1.25rem;
     }
