@@ -86,6 +86,9 @@ main{
     border: 1px var(--cor-azul);
 }
 
+.des__button:hover{
+    background-color: black;
+}
 .saida{
     width: 400px;
     height: auto;
