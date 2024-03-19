@@ -31,17 +31,20 @@ main{
 
 .entrada{
  /* margin: Up   0 Donw left; */
-    margin: 2rem 7% 2rem 12%;
+    margin: 2rem 3% 2rem 10%;
+    width: auto;
 }
 
-.entrada__input{    
+.entrada__input{
+    width: 900px;
     font-size: 32px;
     color: var(--cor-azul);
     background-color:var(--cor-fundo);
     border: none;
-    width: 680px;
-    height: 48px;
+    text-align: justify;
+    word-wrap: break-word;
 }
+
 .entrada__legenda{
     display: flex;
     margin-top: 851px;
@@ -62,12 +65,12 @@ main{
     width: 42.5rem;
     margin-top: 10px;
     gap: 24px;
-
 }
+
 .crip__button{
     background-color: var(--cor-azul);
     color: white;
-    width: 328px;
+    width: 280px;
     height: 67px;
     padding: 24px;
     border-radius: 24px;
@@ -90,16 +93,16 @@ main{
 
 .saida{
     width: 400px;
-    height: 944px;
-    font-size: 15px;
-    text-align: center;
     background-color: white;
     border-radius: 32px;
-    margin: 40px 40px 40px 40px;
+    margin: 0px 40px 40px 40px;
 }
 
 .saida__caixa{
-    margin: 40px 0px 40px 40px;
+    font-size: 24px;
+    text-align: justify;
+    word-wrap: break-word;
+    padding: 40px 40px 40px 40px;
 }
 
 .saida__imagem{
@@ -111,13 +114,15 @@ main{
     flex-direction: column;
     margin-top: 32px;
     gap:8px;
-
 }
+
 .saida__texto h1{
+    text-align: center;
     font-size: 24px;
 }
 
 .saida__texto p{
+    text-align: center;
     font-size: 16px;
 }
 
@@ -129,7 +134,11 @@ main{
         margin: 2.5rem;
     }
     .entrada{
-        margin: 0;
+        margin: auto;
+    }
+    .entrada__input{
+        display: inline-flex;
+        white-space: pre-wrap;
     }
 
     .des__button{
@@ -138,13 +147,17 @@ main{
     }
 
     .saida{
-        display: flex;
-        margin: 0;
-        height: 8.3rem;
+        display: inline-flex;
+        margin: 1.5rem;
+        height: auto;
+        width: 100%;
+        justify-content: center;
+        text-align: justify;
     }
+    
     .saida__caixa{
-
-        margin: 1.25rem 0;
+        margin: auto;
+        padding: 1.25rem;
     }
     .saida__imagem{
         display: none;
