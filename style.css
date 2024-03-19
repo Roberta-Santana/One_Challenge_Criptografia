@@ -13,7 +13,6 @@
 
 body{
     background-color: var(--cor-fundo);
-    height: 50vh;
     box-sizing: border-box;
 }
 header{
@@ -30,13 +29,15 @@ main{
 }
 
 .entrada{
+    display: flex;
+    flex-direction: column;
  /* margin: Up   0 Donw left; */
     margin: 2rem 3% 2rem 10%;
-    width: auto;
 }
 
 .entrada__input{
     width: 650px;
+    height: 650px;
     font-size: 32px;
     color: var(--cor-azul);
     background-color:var(--cor-fundo);
@@ -47,7 +48,6 @@ main{
 
 .entrada__legenda{
     display: flex;
-    margin-top: 600px;
     color: gray;
     font-size: 12px;
     align-content: center;
@@ -62,7 +62,6 @@ main{
 .entrada__botoes{
     display: flex;
     justify-content: space-between;
-    width: 42.5rem;
     margin-top: 10px;
     gap: 24px;
 }
@@ -89,6 +88,7 @@ main{
 
 .saida{
     width: 400px;
+    height: auto;
     background-color: white;
     border-radius: 32px;
     margin: 0px 40px 40px 40px;
@@ -96,9 +96,9 @@ main{
 
 .saida__caixa{
     font-size: 24px;
+    padding: 40px 40px 40px 40px;
     text-align: justify;
     word-wrap: break-word;
-    padding: 40px 40px 40px 40px;
 }
 
 .saida__imagem{
@@ -131,10 +131,10 @@ main{
         margin: 2.5rem;
     }
     .entrada{
-        width: auto;
+        width: 100%;
     }
     .entrada__input{
-        width: 90%;
+        width: auto;
         font-size: 32px;
         color: var(--cor-azul);
         background-color:var(--cor-fundo);
@@ -152,15 +152,14 @@ main{
     }
 
     .saida{
+        display: flex;
         margin: 1.5rem;
         height: auto;
-        width: auto;
-        justify-content: center;
+        width: 100%;
         text-align: justify;
     }
 
     .saida__caixa{
-        width: 80%;
         margin: auto;
         padding: 1.25rem;
     }
@@ -181,11 +180,6 @@ main{
         margin: 2.5rem;
     }
 
-    .entrada__input{
-        width: auto;
-        display: flex;
-    }
-
     .entrada__legenda{
         justify-content: center;
     }
@@ -197,7 +191,20 @@ main{
 
     .saida{
         display: flex;
-        margin: auto;
+        margin: 1.5rem;
+        height: 100%;
+        width:auto;
+        text-align: justify;
+    }
+
+    .saida__caixa{
+        padding: 1rem;
+    }
+    .saida__imagem{
+        display: none;
+    }
+    .saida__texto{
+        margin: 0;
     }
 
 
