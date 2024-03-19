@@ -131,10 +131,10 @@ main{
         margin: 2.5rem;
     }
     .entrada{
-        width: 100%;
+        width: auto;
     }
     .entrada__input{
-        width: auto;
+        width: 90%;
         font-size: 32px;
         color: var(--cor-azul);
         background-color:var(--cor-fundo);
@@ -160,7 +160,6 @@ main{
     }
 
     .saida__caixa{
-        
         margin: auto;
         padding: 1.25rem;
     }
