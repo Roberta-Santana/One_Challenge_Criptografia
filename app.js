@@ -12,7 +12,7 @@ function limparTexto(tag){
 }
 
 function criptografarButton(){
-    textoInicial = document.querySelector('input').value;
+    textoInicial = document.querySelector('.entrada__input').value;
     textoSaida= textoInicial.replace(/e/g, "enter").replace(/i/g, "imes").replace(/a/g, "ai")
                             .replace(/o/g, "ober").replace(/u/g, "ufat");
     /*limparTexto('input');*/
@@ -24,5 +24,5 @@ function descriptografarButton(){
    var textoDescrip = textoFinal.replace(/enter/g, "e").replace(/imes/g, "i").replace(/ai/g, "a")
                                 .replace(/ober/g, "o").replace(/ufat/g, "u");
 /* LIMPAR TEXTO CRIPTOGRAFADO exibiTextoNaTela('input[type="text"]')*/
-    return document.querySelector('input[type="text"]').value = textoDescrip; 
+    return document.querySelector('.entrada__input[type="text"]').value = textoDescrip;
 }
